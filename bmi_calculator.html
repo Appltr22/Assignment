@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator - Health Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="health_info.html">Health Info</a></li>
+            <li><a href="bmi_calculator.html">BMI Calculator</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>What is BMI?</h2>
+            <p>Body Mass Index (BMI) is a measure that uses your height and weight to estimate whether your weight is healthy.</p>
+        </section>
+        <section>
+            <h2>Calculate Your BMI</h2>
+            <p>Enter your height in centimeters and weight in kilograms:</p>
+            <form id="bmiForm">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+
+                <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+            </form>
+            <p id="result"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; ADAM ZUFAR BIN ATIKI BPJ231210265</p>
+    </footer>
+</body>
+</html>
